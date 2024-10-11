@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/textadventure.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Text Adventure Game</title>
+</head>
+
+<header>
+    <pre id="ascii" class="text-center">
+        ███████╗███████╗ ██████╗██████╗ ███████╗████████╗     ██████╗ ███████╗    ███████╗ ██████╗ ██╗   ██╗██████╗     ██████╗  ██████╗  ██████╗ ███╗   ███╗███████╗    
+        ██╔════╝██╔════╝██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██╔═══██╗██╔════╝    ██╔════╝██╔═══██╗██║   ██║██╔══██╗    ██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║██╔════╝    
+        ███████╗█████╗  ██║     ██████╔╝█████╗     ██║       ██║   ██║█████╗      █████╗  ██║   ██║██║   ██║██████╔╝    ██████╔╝██║   ██║██║   ██║██╔████╔██║███████╗    
+        ╚════██║██╔══╝  ██║     ██╔══██╗██╔══╝     ██║       ██║   ██║██╔══╝      ██╔══╝  ██║   ██║██║   ██║██╔══██╗    ██╔══██╗██║   ██║██║   ██║██║╚██╔╝██║╚════██║    
+        ███████║███████╗╚██████╗██║  ██║███████╗   ██║       ╚██████╔╝██║         ██║     ╚██████╔╝╚██████╔╝██║  ██║    ██║  ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║███████║    
+        ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝   ╚═╝        ╚═════╝ ╚═╝         ╚═╝      ╚═════╝  ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚══════╝    
+    </pre>
+</header>
+
+<body>
+    <div class="container mt-4">
+        <section class="text-center">
+            <h1 class="growText">Text Adventure Game</h1> <br>
+            <button type="button" id="startGame" onclick="gamePlay()" class="btn btn-primary btn-lg">START NEW
+                GAME</button><br><br>
+            <div class="d-flex justify-content-center">
+                <!-- Textarea for Game Text -->
+                <textarea rows="15" cols="70" id="displayer" class="form-control me-3" readonly></textarea>
+                <div>
+                    <!-- Location and Inventory Panels -->
+                    <fieldset class="mb-3">
+                        <legend>Location</legend>
+                        <p id="dispLocal"> </p>
+                    </fieldset>
+                    <fieldset style="height: 150px;">
+                        <legend>Inventory</legend>
+                        <p id="showinventory"> </p>
+                    </fieldset>
+                    <button class="btn btn-secondary mt-3" id="startgamebutton" onclick="displayInventory()">Show
+                        Inventory</button>
+                </div>
+            </div>
+            <fieldset id="commands" class="mt-4">
+                <legend>Commands</legend>
+                <p><strong>Commands: </strong><span class="text-primary">north, east, south, west</span>, look around,
+                    tell place, show inventory, clear</p>
+            </fieldset>
+            <div class="input-group mt-4">
+                <input type="text" class="form-control" id="command" placeholder="Your Command">
+                <button class="btn btn-success" type="button" id="enterCommand" onclick="movePlayer()">ENTER
+                    COMMAND</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/textadventure.js"></script>
+</body>
+
+</html>

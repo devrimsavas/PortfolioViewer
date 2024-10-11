@@ -1,0 +1,64 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(26, 26, 25);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  font-size: 120%;
+  color: blue;
+}
+
+.project-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .project-img {
+  transform: scale(1.1); /* Enlarges the image by 10% on hover */
+}
+
+.card {
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}

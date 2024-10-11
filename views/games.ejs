@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head-->
+<%- include("./partials/head.ejs") %>
+
+    <header>
+        <%- include('./partials/navbar.ejs') %>
+    </header>
+
+    <body>
+        <div class="container mt-5">
+            <!-- Games Page Header -->
+            <div class="text-center mb-5">
+                <h1 class="display-4">Games and Algorithms</h1>
+                <p class="lead">This page showcases some of my game development projects, emphasizing the importance of
+                    creating algorithms over complex 3D graphics. Each game demonstrates unique programming techniques,
+                    showcasing my problem-solving skills.</p>
+                <hr>
+            </div>
+
+            <!-- Games Section -->
+            <div class="row">
+                <!-- Game 1: Strategic Memory Game -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/game3.png" class="card-img-top" alt="Strategic Memory Game Screenshot 1">
+                        <img src="./images/games2.png" class="card-img-top mt-2"
+                            alt="Strategic Memory Game Screenshot 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Strategic Memory Game</h5>
+                            <p class="card-text">
+                                This game adds strategic elements to the classic memory game. Originally planned as a
+                                simple game, I introduced new gameplay mechanics and a medieval theme to make it more
+                                engaging. Despite the limitations of Python's tkinter interface, the game is fun and
+                                challenging.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=h9_nCQXqYrE&ab_channel=devrimyilmaz"
+                                class="btn btn-primary" target="_blank">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 2: Pisti -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/pisti1.png" class="card-img-top" alt="Pisti Game Screenshot 1">
+                        <img src="./images/pisti2.png" class="card-img-top mt-2" alt="Pisti Game Screenshot 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Pisti</h5>
+                            <p class="card-text">
+                                Pisti is a classic Turkish card game. My implementation features AI-controlled players
+                                and customizable themes. Players can change the RGB colors of the game and control the
+                                entire game with minimal graphics, focusing on logic and gameplay mechanics.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=C-IMW8N7Tbw&ab_channel=devrimyilmaz"
+                                class="btn btn-primary" target="_blank">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 3: Text Adventure -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/gamestext.png" class="card-img-top" alt="Text Adventure Screenshot 1">
+                        <img src="./images/gamestext2.png" class="card-img-top mt-2" alt="Text Adventure Screenshot 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Text Adventure Game</h5>
+                            <p class="card-text">
+                                This simple text-based adventure game demonstrates how to create a semi-text,
+                                semi-graphic game using Python classes. It’s a small but expandable game where rooms can
+                                be connected and doors can be opened. The game focuses on game logic rather than
+                                graphics.
+                            </p>
+                            <a href="/playgame" class="btn btn-primary" target="_blank">Play in Browser</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Game 4: Slider Puzzle  -->
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/sliderpuzzle1.png" class="card-img-top" alt="Text Adventure Screenshot 1">
+                        <img src="./images/sliderpuzzle3.png" class="card-img-top mt-2"
+                            alt="Text Adventure Screenshot 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Slider Puzzle Game </h5>
+                            <p class="card-text">
+                                ABOUT THE GAME
+                                This sliding puzzle game allows users to customize the puzzle by selecting the number of
+                                tiles, the size of the tiles,
+                                and the image they want to use. The game’s algorithm ensures that the tiles are shuffled
+                                into a solvable configuration,
+                                as not every random combination of pieces can result in a valid solution.
+
+                                Why It’s Important
+                                Creating a sliding puzzle game involves not only designing a fun and interactive
+                                experience but also tackling a
+                                significant algorithmic challenge. The key to this game is generating a solvable
+                                shuffle. Many random combinations of
+                                pieces in sliding puzzles are mathematically unsolvable. Therefore, the game implements
+                                a specialized algorithm to
+                                ensure that every shuffled puzzle can be solved, no matter how complex the
+                                configuration.
+
+                                This puzzle game demonstrates the importance of understanding algorithmic
+                                problem-solving in game development. It
+                                showcases how to deal with constraints, randomness, and player interactivity—skills that
+                                are crucial for any programmer.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=FxRupi6h8Po&ab_channel=devrimyilmaz"
+                                class="btn btn-primary" target="_blank">Play in
+                                Browser</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Additional Information -->
+            <div class="mt-5">
+                <h2 class="display-5">Why Games Matter</h2>
+                <p>Developing games is not just about creating entertainment. For a programmer, it's an opportunity to
+                    showcase algorithms, logical thinking, and problem-solving abilities. These games demonstrate how
+                    you can apply different programming techniques and approaches to create engaging experiences.</p>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+
+    </body>
+
+</html>

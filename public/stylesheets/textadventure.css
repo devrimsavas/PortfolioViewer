@@ -1,0 +1,68 @@
+#ascii {
+  font-size: 12px;
+  text-decoration: underline red double 1px;
+  animation: asciiAnime 6s infinite alternate;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #8d8d86 !important;
+  color: #f3f3f3;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+textarea {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  color: rgb(6, 208, 30) !important;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+}
+
+input {
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+fieldset {
+  border-radius: 15px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #393a3b;
+  color: white;
+}
+
+#commands {
+  width: 100%;
+}
+
+@keyframes asciiAnime {
+  0% {
+    color: #0056a3;
+  }
+  100% {
+    color: chartreuse;
+  }
+}
+
+.growText {
+  animation: textGrow 2s infinite alternate;
+}
+
+button {
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056a3;
+}

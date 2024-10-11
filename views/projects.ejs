@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head-->
+<%- include("./partials/head.ejs") %>
+
+    <header>
+        <%- include('./partials/navbar.ejs') %>
+    </header>
+
+    <body>
+        <div class="container mt-5">
+            <!-- About Me Section -->
+            <div class="text-center mb-5">
+                <h1 class="display-4">Projects Overview</h1>
+                <p class="lead">Below are some of the projects I’ve deployed and would love to showcase during the
+                    interview. These projects reflect my skills and experience in full-stack development, using various
+                    technologies like Node.js, Python, MongoDB, and more.</p>
+                <p class="text-danger"><strong>Note:</strong> These apps are deployed on free services, so loading may
+                    take time. Please be patient, they work fine once loaded.</p>
+                <hr>
+            </div>
+
+            <!-- Projects Section with Hover Effect for Photos -->
+            <div class="row">
+                <!-- Project 1: Stock Market Analyzer -->
+                <div class="col-md-6 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/stockmarket_analyzer.png" class="card-img-top project-img"
+                            alt="Stock Market Analyzer Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Stock Market Analyzer</h5>
+                            <p class="card-text">A program that uses TensorFlow and machine learning to predict stock
+                                prices.</p>
+                            <a href="https://stockmarket-analyzer-flask.onrender.com/" class="btn btn-primary"
+                                target="_blank">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Programmer Planner -->
+                <div class="col-md-6 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/programmer_planner.png" class="card-img-top project-img"
+                            alt="Programmer Planner Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Programmer Planner</h5>
+                            <p class="card-text">A tool to organize programming tasks, built with Node.js and MongoDB.
+                                (Username: Admin, Password: aaaaaa)</p>
+                            <a href="https://programmer-plan-v3.onrender.com" class="btn btn-primary"
+                                target="_blank">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Dice Simulator -->
+                <div class="col-md-6 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/dice_simulation.png" class="card-img-top project-img"
+                            alt="Dice Simulator Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Dice Simulator</h5>
+                            <p class="card-text">A project that uses statistical functions and collects user data via
+                                MongoDB.</p>
+                            <a href="https://dicesimnode.onrender.com" class="btn btn-primary" target="_blank">Visit
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Event Listeners Demo -->
+                <div class="col-md-6 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/js_mongo_school.png" class="card-img-top project-img"
+                            alt="Event Listeners Demo Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Listeners Demo</h5>
+                            <p class="card-text">A program for students, showcasing event listeners for various
+                                functions.</p>
+                            <a href="https://js-mongo-school1.onrender.com" class="btn btn-primary"
+                                target="_blank">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Simple Draw -->
+                <div class="col-md-6 mb-4">
+                    <div class="card hover-effect">
+                        <img src="./images/easydraw.png" class="card-img-top project-img" alt="Simple Draw Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Draw</h5>
+                            <p class="card-text">A simple drawing program using canvas and event listeners.</p>
+                            <a href="https://simpledraw.onrender.com" class="btn btn-primary" target="_blank">Visit
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Data Analyzer Programs Section with Grid Layout -->
+            <div class="mt-5">
+                <h2 class="display-5">Data Analyzer Programs (Coming Soon)</h2>
+                <p>These programs are currently standalone and will soon have backends added to them. They are available
+                    on my
+                    GitHub, and I am constantly updating them:</p>
+
+                <div class="row">
+                    <!-- Diabetes Prediction -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card hover-effect">
+                            <img src="./images/diabetprediction.png" class="card-img-top project-img"
+                                alt="Diabetes Prediction Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Diabetes Prediction</h5>
+                                <p class="card-text">This program analyzes real data sets from Kaggle to predict
+                                    diabetes. It uses
+                                    Scikit-learn to analyze the data and display a treeview of the results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mushroom Prediction -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card hover-effect">
+                            <img src="./images/mushroom.png" class="card-img-top project-img"
+                                alt="Mushroom Prediction Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Mushroom Prediction</h5>
+                                <p class="card-text">This program predicts whether a mushroom is poisonous or not, using
+                                    machine
+                                    learning techniques and feature analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate Price Regression -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card hover-effect">
+                            <img src="./images/realton.png" class="card-img-top project-img"
+                                alt="Real Estate Price Regression Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Real Estate Price Regression</h5>
+                                <p class="card-text">This program performs regression analysis on real estate prices
+                                    using various
+                                    machine learning methods to predict market trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-muted">These are just a few of my ongoing projects. Soon, I will provide backends for
+                    these programs
+                    and make them fully functional as web applications.</p>
+            </div>
+
+            <hr>
+
+            <!-- Additional Information -->
+            <div class="mt-5">
+                <h2 class="display-5">Experience & Technologies</h2>
+                <p>My extensive experience covers both front-end and back-end technologies, including C#, ASP.NET Core,
+                    Node.js, Express.js, Python, Django, and databases like MongoDB, MySQL, and PostgreSQL. I also have
+                    solid experience with version control, CI/CD, and Agile methodologies, making me an effective team
+                    player in dynamic environments.</p>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+
+    </body>
+
+</html>
