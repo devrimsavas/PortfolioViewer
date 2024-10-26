@@ -17,7 +17,7 @@
             .project-img {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
-                height: 200px;
+                height: 400px;
                 object-fit: cover;
             }
 
@@ -48,7 +48,7 @@
         <%- include("./partials/navbar.ejs") %>
     </header>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="text-center mb-5">
             <h1 class="display-4">Projects Overview</h1>
             <p class="lead">Below are some of the projects I’ve deployed, which showcase my expertise in full-stack
@@ -157,14 +157,15 @@
                         alt="Census Application Screenshot">
                     <div class="card-body">
                         <h5 class="card-title"><i class="bi bi-people"></i> Census Application</h5>
-                        <p class="card-text">A project that uses statistical functions and collects user data via
-                            MongoDB.</p>
-                        <a href="https://github.com/devrimsavas/Dice_Simulator_and_VisitorTracker"
+                        <p class="card-text">Census Application. You can try with :Login=admin , password=P4ssword: </p>
+
+                        <a href="https://github.com/devrimsavas/CensusWithFrontEnd"
                             class="d-inline-flex align-items-center mb-2 text-decoration-none" target="_blank">
                             <i class="bi bi-github me-1"></i> See Code on GitHub
                         </a>
                         <br>
-                        <a href="https://dicesimnode.onrender.com" class="btn btn-primary btn-view" target="_blank">
+                        <a href="https://censuswithfrontend.onrender.com/" class="btn btn-primary btn-view"
+                            target="_blank">
                             <i class="bi bi-arrow-right-circle"></i> Visit Project
                         </a>
                     </div>
@@ -262,7 +263,7 @@
         <hr>
 
         <!-- Additional Information -->
-        <div class="mt-5">
+        <div class="mt-5 mb-5">
             <h2 class="display-5">Experience & Technologies</h2>
             <p>My extensive experience covers both front-end and back-end technologies, including C#, ASP.NET Core,
                 Node.js, Express.js, Python, Django, and databases like MongoDB, MySQL, and PostgreSQL. I also have
@@ -270,6 +271,11 @@
                 player in dynamic environments.</p>
         </div>
     </div>
+
+    <footer>
+        <%- include('./partials/footer.ejs') %>
+    </footer>
+
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
