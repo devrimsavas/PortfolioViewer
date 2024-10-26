@@ -1,105 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--head-->
-<%- include("./partials/head.ejs") %>
+<head>
+  <%- include("./partials/head.ejs") %>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      /* Custom Styles */
+      .card-style {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
+      .hover-effect:hover {
+        transform: scale(1.02);
+        transition: transform 0.2s;
+      }
+
+      .rounded-circle {
+        border: 3px solid #6c757d;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .social-icon:hover {
+        color: #007bff;
+        transform: scale(1.1);
+        transition: color 0.3s, transform 0.3s;
+      }
+
+      .list-unstyled li {
+        margin-bottom: 10px;
+      }
+
+      .container {
+        max-width: 1100px;
+      }
+
+      hr {
+        border: 1px solid #007bff;
+        max-width: 80%;
+        margin: auto;
+      }
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+</head>
+
+<body>
   <header>
     <%- include('./partials/navbar.ejs') %>
   </header>
 
-  <body>
-    <div class="container mt-5">
-
-      <!-- About Me Section -->
-      <div class="text-center mb-5">
-        <h1 class="display-4">About Me</h1>
-        <p class="lead">Hello, I’m Devrim, a Full Stack Developer based in Drammen. I build scalable web applications
-          with a strong focus on modern technologies and problem-solving. My passion lies in crafting solutions that
-          deliver real value.</p>
-        <hr> <!-- Line under the section -->
-      </div>
-
-      <!-- Profile Photo Section -->
-      <div class="text-center mb-5">
-        <img src="./images/devrim.jpg" class="rounded-circle img-fluid" alt="Your Profile Photo"
-          style="max-width: 200px;">
-        <hr> <!-- Line under the section -->
-      </div>
-
-      <!-- Technical Skills Section -->
-      <div>
-        <h2 class="mb-3 display-5">Technical Skills</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Front-End Technologies</h4>
-            <ul class="list-unstyled">
-              <li>React, Vite, Tailwind CSS, Bootstrap</li>
-              <li>TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS</li>
-              <li>jQuery, Webpack, Babel, Redux, Next.js</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h4>Back-End Technologies</h4>
-            <ul class="list-unstyled">
-              <li>Node.js, Express.js, C#, ASP.NET Core</li>
-              <li>Python, Flask, Django, MongoDB, MySQL, PostgreSQL</li>
-              <li>Docker, Kubernetes, AWS, Azure, Firebase</li>
-            </ul>
-          </div>
-        </div>
-        <hr> <!-- Line under the section -->
-      </div>
-
-      <!-- Proficiency Section -->
-      <div class="mt-5">
-        <h2 class="display-5">Proficiency</h2>
-        <p>With extensive experience in JavaScript, TypeScript, C#, and Python, I’ve developed full-stack applications
-          that integrate databases like MongoDB and MySQL. I thrive in Agile environments and excel in managing sprints,
-          CI/CD pipelines, and containerized applications using Docker and Kubernetes.</p>
-        <hr> <!-- Line under the section -->
-      </div>
-
-      <!-- Contact Icons Section -->
-      <div class="mt-5 text-center">
-        <h2 class="display-5">Contact & Socials</h2>
-        <div class="d-flex justify-content-center mt-3">
-          <a href="mailto:devrimsavasyilmaz@gmail.com" class="mx-3">
-            <i class="bi bi-envelope-fill" style="font-size: 2rem;"></i>
-          </a>
-          <a href="https://github.com/devrimsavas" class="mx-3">
-            <i class="bi bi-github" style="font-size: 2rem;"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yourprofile" class="mx-3">
-            <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
-          </a>
-          <a href="https://www.google.com/maps/place/Drammen/" class="mx-3">
-            <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
-          </a>
-        </div>
-        <hr> <!-- Line under the section -->
-      </div>
-
-      <!-- Skills Section using skillicons.dev -->
-      <div class="mt-5 text-center">
-        <h2 class="display-5">Skills & Technologies</h2>
-        <div class="d-flex justify-content-center flex-wrap mt-4">
-          <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,typescript,docker,kubernetes,mongodb,aws"
-            alt="Skills Icons" />
-        </div>
-        <hr> <!-- Line under the section -->
-      </div>
-
+  <div class="container mt-5">
+    <!-- About Me Section -->
+    <div class="text-center mb-5">
+      <h1 class="display-4">About Me</h1>
+      <p class="lead">Hello, I’m Devrim, a Full Stack Developer based in Drammen. I build scalable web applications
+        with a strong focus on modern technologies and problem-solving. My passion lies in crafting solutions that
+        deliver real value.</p>
+      <hr>
     </div>
 
-    <!-- Scripts -->
-    <script src="./javascripts/getuser.js">
+    <!-- Profile Photo Section -->
+    <div class="text-center mb-5">
+      <img src="./images/devrim.jpg" class="rounded-circle img-fluid" alt="Profile Photo" style="max-width: 200px;">
+      <hr>
+    </div>
 
-    </script>
+    <!-- Technical Skills Section -->
+    <div class="mt-5">
+      <h2 class="mb-3 display-5">Technical Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4><i class="bi bi-window-sidebar"></i> Front-End Technologies</h4>
+          <ul class="list-unstyled">
+            <li>React, Vite, Tailwind CSS, Bootstrap</li>
+            <li>TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS</li>
+            <li>jQuery, Webpack, Babel, Redux, Next.js</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4><i class="bi bi-server"></i> Back-End Technologies</h4>
+          <ul class="list-unstyled">
+            <li>Node.js, Express.js, C#, ASP.NET Core</li>
+            <li>Python, Flask, Django, MongoDB, MySQL, PostgreSQL</li>
+            <li>Docker, Kubernetes, AWS, Azure, Firebase</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
 
+    <!-- Proficiency Section -->
+    <div class="mt-5">
+      <h2 class="display-5"><i class="bi bi-lightbulb-fill"></i> Proficiency</h2>
+      <p>With extensive experience in JavaScript, TypeScript, C#, and Python, I’ve developed full-stack applications
+        that integrate databases like MongoDB and MySQL. I thrive in Agile environments and excel in managing sprints,
+        CI/CD pipelines, and containerized applications using Docker and Kubernetes.</p>
+      <hr>
+    </div>
 
+    <!-- Contact Icons Section -->
+    <div class="mt-5 text-center">
+      <h2 class="display-5"><i class="bi bi-envelope-fill"></i> Contact & Socials</h2>
+      <div class="d-flex justify-content-center mt-3">
+        <a href="mailto:devrimsavasyilmaz@gmail.com" class="mx-3 social-icon">
+          <i class="bi bi-envelope-fill" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://github.com/devrimsavas" class="mx-3 social-icon">
+          <i class="bi bi-github" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourprofile" class="mx-3 social-icon">
+          <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://www.google.com/maps/place/Drammen/" class="mx-3 social-icon">
+          <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
+        </a>
+      </div>
+      <hr>
+    </div>
 
+    <!-- Skills Section using skillicons.dev -->
+    <div class="mt-5 text-center">
+      <h2 class="display-5"><i class="bi bi-tools"></i> Skills & Technologies</h2>
+      <div class="d-flex justify-content-center flex-wrap mt-4">
+        <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,typescript,docker,kubernetes,mongodb,aws"
+          alt="Skills Icons" style="max-width: 500px;" />
+      </div>
+      <hr>
+    </div>
 
-  </body>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./javascripts/getuser.js"></script>
+</body>
 
 </html>
