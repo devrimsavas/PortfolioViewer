@@ -189,3 +189,9 @@ body.dark-mode .technical-skills li {
   background-color: transparent;
   color: #e0e0e0;
 }
+
+/* Dark mode styles for project screenshots */
+body.dark-mode .project-img {
+  filter: brightness(0.4) contrast(200%);
+  transition: filter 0.3s ease-in-out;
+}
