@@ -32,7 +32,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
 }
 
 li {
@@ -192,6 +192,17 @@ body.dark-mode .technical-skills li {
 
 /* Dark mode styles for project screenshots */
 body.dark-mode .project-img {
-  filter: brightness(0.4) contrast(200%);
+  filter: brightness(0.8) contrast(100%);
   transition: filter 0.3s ease-in-out;
+}
+
+.pdf-container {
+  width: 80%;
+  height: 90vh;
+  border: 1px solid #ccc;
+  height: 1200px;
+  width: auto;
+  border: 1px solid #ccc;
+  margin: auto;
+  border-radius: 5px;
 }

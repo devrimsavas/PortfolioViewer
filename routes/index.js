@@ -120,4 +120,12 @@ router.post("/user-info", async (req, res) => {
   }
 });
 
+//resume
+
+// Route to render the HTML page and pass the PDF path
+router.get("/resume", (req, res) => {
+  const pdfPath = "/data/devrimcv.pdf"; // Path within the public directory
+  res.render("resume", { pdfPath: pdfPath, title: "My Resume" }); // Pass PDF path to EJS template
+});
+
 module.exports = router;
